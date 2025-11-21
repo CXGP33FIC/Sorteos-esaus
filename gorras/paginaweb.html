@@ -116,6 +116,30 @@
     .brand-card{background:transparent; border:none; border-radius:0; box-shadow:none; padding:6px; display:flex; flex-direction:column; align-items:center; justify-content:center}
     .brand-logo{width:100%; max-height:120px; aspect-ratio:1/1; object-fit:contain; background:transparent; border-radius:0; filter:grayscale(100%) contrast(1.05) brightness(1.02)}
     .brand-name{display:none}
+    /* --- Ajustes responsivos adicionales para móvil pequeño --- */
+    @media (max-width:480px){
+      /* Navbar: centra la marca y fija los iconos a la derecha */
+      .nav-inner{justify-content:center; padding:10px 0}
+      .brand{position:static; left:auto; transform:none; margin:0 auto}
+      .nav .right{position:absolute; right:12px}
+      .search-wrap.active .search-input{width:140px}
+
+      /* Portada más compacta en móvil */
+      .brand-hero{height:60vh}
+
+      /* Catálogo en 1 columna y menor separación */
+      .grid{grid-template-columns:1fr; gap:20px}
+      .card .info{min-height:auto}
+      .card .title{font-size:.95rem}
+
+      /* Drawer ocupa todo el ancho en móvil */
+      .drawer{width:100%; max-width:100vw}
+
+      /* Cajas de información y contacto más flexibles */
+      .container.info{padding-right:0}
+      .contact-box{max-width:100%; margin:0 auto}
+      .brand-logo{max-height:90px}
+    }
   </style>
 </head>
 <body>

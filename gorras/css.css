@@ -60,3 +60,11 @@
 .btn.gold{background:linear-gradient(135deg,#e5c100 0%,#caa000 50%,#8d6f00 100%); border-color:#a58a00; color:#111; font-weight:700}
 .btn.gold:hover{box-shadow:0 12px 24px rgba(197,155,0,.35)}
 .user-text{margin-left:8px; font-weight:700; font-family:Montserrat,system-ui;}
+
+/* Lightbox (ampliar imagen) */
+.lightbox-overlay{position:fixed; inset:0; background:rgba(0,0,0,.7); display:none; align-items:center; justify-content:center; z-index:1000}
+.lightbox-overlay.open{display:flex}
+.lightbox-img{max-width:90vw; max-height:90vh; border-radius:12px; box-shadow:0 20px 40px rgba(0,0,0,.4); animation:lb-zoom .18s ease}
+@keyframes lb-zoom{from{transform:scale(.96); opacity:.7} to{transform:scale(1); opacity:1}}
+/* Cursor indicativo en galerías de producto */
+.galeria img{cursor:zoom-in}
