@@ -1,0 +1,3 @@
+[build]
+  publish = "gorras"
+  # No build command for a static site; Netlify servirá los archivos tal cual

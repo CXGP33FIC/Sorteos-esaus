@@ -1,0 +1,27 @@
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# Environment
+.env
+.env.*
+
+# Build outputs
+dist/
+build/
+coverage/
+
+# Dependencies
+node_modules/
+
+# IDE/editor
+.vscode/
+.idea/
+
+# Caches and temp
+*.tmp
+*.cache
